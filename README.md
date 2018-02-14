@@ -1,7 +1,7 @@
 # dev_machine_dockerfile
 dockerfile and supporting files for basic dev machine set up; not complete yet
 
-TODO: add gitconfig for git lg, add fzf and ripgrep set up
+TODO: add gitconfig for git lg
 
 # build the image
 docker build -t dev_machine .
