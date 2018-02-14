@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/clam/git/micros/ocp/shipyard/ansible/cd-pipeline/host_vars/vagrant-localhost'
+let g:netrw_dirhist_2='/Users/clam/git/micros/ocp/shipyard/ansible/cd-pipeline/group_vars/all'
+let g:netrw_dirhist_3='/Users/clam/git/micros/ocp/localhost/vagrant_localhost/ansible/inventory'
+let g:netrw_dirhist_4='/Users/clam/git/micros/ocp/vagrant_localhost/puppet/modules/resolv_conf'
+let g:netrw_dirhist_5='/Users/clam/git/micros/ocp/vagrant_localhost/puppet/modules/tomcat'
+let g:netrw_dirhist_6='/Users/clam'
+let g:netrw_dirhist_7='/Users/clam/git'
+let g:netrw_dirhist_8='/Users/clam/git/git-transfer'
+let g:netrw_dirhist_9='/Users/clam/git/development/python/intro'
