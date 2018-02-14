@@ -29,12 +29,13 @@ let python_highlight_all=1
 
 call plug#begin('~/.local/share/nvim/plugged') 
 
-Plug '/usr/local/opt/fzf'
+"Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-obsession'
 Plug 'w0rp/ale'
-Plug 'altercation/vim-colors-solarized'
+Plug 'flazz/vim-colorschemes'
 Plug 'scrooloose/nerdtree'
 
 call plug#end()
@@ -44,9 +45,9 @@ syntax on
 filetype plugin indent on
 
 syntax enable
-set background=light
+"set background=light
 "set background=dark
-colorscheme solarized
+colorscheme wombat
 
 " ALE javascript local eslint
 let g:ale_javascript_eslint_use_global = 1

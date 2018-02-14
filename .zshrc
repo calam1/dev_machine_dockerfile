@@ -77,4 +77,4 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
 #export PATH=$PATH:$GOPATH/bin
 #export PATH=$PATH:$(go env GOPATH)/bin
 #
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
