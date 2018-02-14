@@ -44,8 +44,8 @@ syntax on
 filetype plugin indent on
 
 syntax enable
-"set background=light
-set background=dark
+set background=light
+"set background=dark
 colorscheme solarized
 
 " ALE javascript local eslint
