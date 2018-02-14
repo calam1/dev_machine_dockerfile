@@ -7,7 +7,7 @@ TODO: add gitconfig for git lg, add fzf and ripgrep set up
 docker build -t dev_machine .
 
 # build the container
-docker run -i -t --name devmachine --hostname devmachine -t dev_machine
+docker run -i -t --name devmachine --hostname devmachine dev_machine
 
 # access machine - for some reason it starts in the tmux dir
 docker exec -i -t devmachine zsh
