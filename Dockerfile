@@ -34,7 +34,7 @@ RUN apt-get -y -qq --force-yes update \
 	 automake \
 	 libevent-dev \
 	 libncurses5-dev \
-	 ag
+	 silversearcher-ag
 
 
 # Generally a good idea to have these, extensions sometimes need them
