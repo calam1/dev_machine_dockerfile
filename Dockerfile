@@ -66,7 +66,7 @@ RUN make
 RUN make install
 RUN rm -rf /usr/local/src/tmux*
 # copy tmux conf to home dir
-COPY ./.tmux.conf /
+COPY ./.tmux.conf /root/
 
 # Install neovim
 RUN apt-get update && \
