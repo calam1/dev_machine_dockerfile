@@ -65,7 +65,8 @@ alias vi=vim
 # --follow: Follow symlinks
 # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 #export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
-export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
+#export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
+export FZF_DEFAULT_COMMAND='ag -g ""'
 
 #nvm
 #export NVM_DIR="$HOME/.nvm"
@@ -76,5 +77,3 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
 #export GOPATH=$HOME/git/development/golang
 #export PATH=$PATH:$GOPATH/bin
 #export PATH=$PATH:$(go env GOPATH)/bin
-#
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -29,7 +29,6 @@ let python_highlight_all=1
 
 call plug#begin('~/.local/share/nvim/plugged') 
 
-Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -37,6 +36,7 @@ Plug 'tpope/vim-obsession'
 Plug 'w0rp/ale'
 Plug 'flazz/vim-colorschemes'
 Plug 'scrooloose/nerdtree'
+Plug '/root/.fzf'
 
 call plug#end()
 

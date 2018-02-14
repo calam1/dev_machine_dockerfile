@@ -33,7 +33,8 @@ RUN apt-get -y -qq --force-yes update \
  	 autogen \
 	 automake \
 	 libevent-dev \
-	 libncurses5-dev
+	 libncurses5-dev \
+	 ag
 
 
 # Generally a good idea to have these, extensions sometimes need them
@@ -47,7 +48,6 @@ RUN git clone --recursive https://github.com/sorin-ionescu/prezto.git /root/.zpr
 COPY ./.zshrc /root/
 WORKDIR /root
 RUN pwd
-RUN ls -al
 RUN /bin/zsh -c "source .zshrc"
 RUN chsh -s /bin/zsh
 RUN ln -s "/root/.zprezto/runcoms/zpreztorc" "/root/.zpreztorc"
@@ -70,6 +70,10 @@ RUN make install
 RUN rm -rf /usr/local/src/tmux*
 # copy tmux conf to home dir
 COPY ./.tmux.conf /root/
+
+# Install fzf
+RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+RUN ~/.fzf/install
 
 # Install neovim
 RUN apt-get update && \
