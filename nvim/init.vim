@@ -29,7 +29,7 @@ let python_highlight_all=1
 
 call plug#begin('~/.local/share/nvim/plugged') 
 
-"Plug '/usr/local/opt/fzf'
+Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'

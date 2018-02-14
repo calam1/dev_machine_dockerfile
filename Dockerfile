@@ -45,7 +45,10 @@ ENV LC_ALL en_US.UTF-8
 # zsh install and set up
 RUN git clone --recursive https://github.com/sorin-ionescu/prezto.git /root/.zprezto
 COPY ./.zshrc /root/
-RUN /bin/zsh -c "source /root/.zshrc"
+WORKDIR /root
+RUN pwd
+RUN ls -al
+RUN /bin/zsh -c "source .zshrc"
 RUN chsh -s /bin/zsh
 RUN ln -s "/root/.zprezto/runcoms/zpreztorc" "/root/.zpreztorc"
 RUN ln -s "/root/.zprezto/runcoms/zlogin" "/root/.zlogin"
@@ -99,3 +102,5 @@ ADD nvim /root/.config/nvim
 ## Install neovim Modules
 RUN nvim -i NONE -c PlugInstall -c quitall > /dev/null 2>&1
 RUN nvim -i NONE -c UpdateRemotePlugins -c quitall > /dev/null 2>&1
+
+WORKDIR /root
