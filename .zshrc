@@ -18,13 +18,12 @@ fi
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time time)
 
 
-# oracle proxy crap
 export https_proxy=http://rmdc-proxy.oracle.com:80
 export ftp_proxy=http://rmdc-proxy.oracle.com:80
 export HTTP_PROXY=http://rmdc-proxy.oracle.com:80
 export HTTPS_PROXY=http://rmdc-proxy.oracle.com:80
 export FTP_PROXY=http://rmdc-proxy.oracle.com:80
-export no_proxy="192.168.0.101, localhost, 127.0.0.1, 0.0.0.0, kernel.us.oracle.com,uln-internal.oracle.com"
+export no_proxy="192.168.0.101, localhost, 127.0.0.1, 0.0.0.0, kernel.us.oracle.com,uln-internal.oracle.com,alm.oraclecorp.com"
 export NO_PROXY="192.168.0.101, localhost, 127.0.0.1, 0.0.0.0"
 
 function setProxy() {
@@ -33,7 +32,7 @@ function setProxy() {
   export HTTP_PROXY=http://rmdc-proxy.oracle.com:80
   export HTTPS_PROXY=http://rmdc-proxy.oracle.com:80
   export FTP_PROXY=http://rmdc-proxy.oracle.com:80
-  export no_proxy="192.168.0.101, localhost, 127.0.0.1, 0.0.0.0, kernel.us.oracle.com,uln-internal.oracle.com"
+  export no_proxy="192.168.0.101, localhost, 127.0.0.1, 0.0.0.0, kernel.us.oracle.com,uln-internal.oracle.com,alm.oraclecorp.com"
   export NO_PROXY="192.168.0.101, localhost, 127.0.0.1, 0.0.0.0"
 }
 
