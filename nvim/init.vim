@@ -47,7 +47,7 @@ filetype plugin indent on
 syntax enable
 "set background=light
 "set background=dark
-colorscheme wombat
+colorscheme wombat256
 
 " ALE javascript local eslint
 let g:ale_javascript_eslint_use_global = 1
