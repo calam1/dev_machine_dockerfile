@@ -107,4 +107,8 @@ ADD nvim /root/.config/nvim
 RUN nvim -i NONE -c PlugInstall -c quitall > /dev/null 2>&1
 RUN nvim -i NONE -c UpdateRemotePlugins -c quitall > /dev/null 2>&1
 
+# git config
+RUN git config --global user.name "Chris Lam"
+RUN git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+
 WORKDIR /root
