@@ -6,7 +6,7 @@ ENV http_proxy=http://rmdc-proxy.oracle.com:80/
 ENV HTTP_PROXY=http://rmdc-proxy.oracle.com:80/
 ENV https_proxy=http://rmdc-proxy.oracle.com:80/
 ENV HTTPS_PROXY=http://rmdc-proxy.oracle.com:80/
-ENV no_proxy=us.oracle.com,uln-internal.oracle.com,cedepot.oraclecorp.com
+ENV no_proxy=us.oracle.com,uln-internal.oracle.com,cedepot.oraclecorp.com,alm.oraclecorp.com
 
 # Better terminal support
 ENV TERM screen-256color
