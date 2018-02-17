@@ -45,7 +45,7 @@ syntax on
 filetype plugin indent on
 
 syntax enable
-"set background=light
+set background=light
 "set background=dark
 colorscheme wombat256
 
