@@ -16,7 +16,7 @@ fi
 #POWERLEVEL9K_TIME_FORMAT="%D{%H:%M:%S %m/%d/%Y}"
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time time)
-
+PROMPT='${${PROMPT}:+"%F{9}%n%f%F{7}@%f%F{3}%m%f "}%F{4}${_prompt_sorin_pwd}%(!. %B%F{1}#%f%b.)${editor_info[keymap]} '
 
 export https_proxy=http://rmdc-proxy.oracle.com:80
 export ftp_proxy=http://rmdc-proxy.oracle.com:80
