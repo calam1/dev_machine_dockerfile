@@ -1,6 +1,6 @@
 FROM ubuntu:17.10
 
-MAINTAINER chris.lam@oracle.com
+MAINTAINER chrislam67@gmail.com
 
 ENV http_proxy=http://rmdc-proxy.oracle.com:80/
 ENV HTTP_PROXY=http://rmdc-proxy.oracle.com:80/
