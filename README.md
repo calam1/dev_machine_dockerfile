@@ -6,7 +6,7 @@ docker build -t dev_machine .
 
 # build the container
 docker run -i -t --name devmachine --hostname devmachine dev_machine
-or if you want to share a drive on the host and the docker machine
+# or if you want to share a drive on the host and the docker machine
 docker run -i -t --name devmachine --hostname devmachine -v /u00/workspace:/root/workspace dev_machine
 
 # access machine
