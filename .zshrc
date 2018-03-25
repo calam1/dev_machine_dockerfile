@@ -73,7 +73,7 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 
 
 # golang
-export PATH=$PATH:/usr/local/go/bin
-#export GOPATH=$HOME/git/development/golang
-#export PATH=$PATH:$GOPATH/bin
-#export PATH=$PATH:$(go env GOPATH)/bin
+xport PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=/root/workspace/git/golang
+
