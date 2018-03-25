@@ -80,7 +80,6 @@ RUN curl -O https://storage.googleapis.com/golang/go1.10.linux-amd64.tar.gz  # D
 RUN tar -xvf go1.10.linux-amd64.tar.gz  # Extract archive
 RUN mv go /usr/local  # Move binaries to /usr/local
 RUN echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile  # Update our bash profile so Go is in the PATH
-RUN source ~/.profile  # Update profile
 
 # Install neovim
 RUN apt-get update && \
