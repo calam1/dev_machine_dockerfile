@@ -11,6 +11,3 @@ docker run -i -t --name devmachine --hostname devmachine -v /u00/workspace:/root
 
 # access machine
 docker exec -i -t devmachine zsh
-
-# if you will be using golang
-Run :GoInstallBinaries at the first time that you open a *.go file.
