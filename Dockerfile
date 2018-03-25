@@ -75,6 +75,11 @@ COPY ./.tmux.conf /root/
 RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 RUN ~/.fzf/install
 
+# Install go
+RUN add-apt-repository ppa:longsleep/golang-backports
+RUN apt-get update
+RUN apt-get install -y golang-1.10-go
+
 # Install neovim
 RUN apt-get update && \
     apt-get install -y \
