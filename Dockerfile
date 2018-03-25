@@ -76,9 +76,11 @@ RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 RUN ~/.fzf/install
 
 # Install go
-RUN add-apt-repository ppa:longsleep/golang-backports
-RUN apt-get update
-RUN apt-get install -y golang-1.10-go
+RUN curl -O https://storage.googleapis.com/golang/go1.10.linux-amd64.tar.gz  # Download archive. Change the archive's name if you need another version of Go or another system architecture
+RUN tar -xvf go1.10.linux-amd64.tar.gz  # Extract archive
+RUN mv go /usr/local  # Move binaries to /usr/local
+RUN echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile  # Update our bash profile so Go is in the PATH
+RUN source ~/.profile  # Update profile
 
 # Install neovim
 RUN apt-get update && \
