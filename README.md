@@ -1,5 +1,6 @@
 # dev_machine_dockerfile
 dockerfile and supporting files for basic dev machine set up; not complete yet
+if you are behind a proxy you need to read this https://docs.docker.com/config/daemon/systemd/#httphttps-proxy and set it up, if you are using a linux box, otherwise a mac client uses the preferences
 
 # build the image
 docker build -t dev_machine .
