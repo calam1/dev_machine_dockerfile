@@ -34,6 +34,7 @@ RUN apt-get -y -qq --force-yes update \
 	 automake \
 	 libevent-dev \
 	 libncurses5-dev \
+	 gettext \
 	 silversearcher-ag
 
 
